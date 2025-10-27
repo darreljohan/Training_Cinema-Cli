@@ -107,7 +107,8 @@ public class View {
 
     public void showAllSchedules(){
         for(Schedule schedule: cinema.getSchedules()){
-            showScheduleInformation(schedule);
+            //showScheduleInformation(schedule);
+            schedule.printScheduleInformation();
         }
     }
 

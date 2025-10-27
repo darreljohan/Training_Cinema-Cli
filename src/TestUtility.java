@@ -1,6 +1,6 @@
 import java.time.LocalDateTime;
 
-public class TestUtility {
+public class TestUtility {//inject class , backdoor input
     Cinema cinema;
 
     public TestUtility(Cinema cinema) {

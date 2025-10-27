@@ -16,6 +16,17 @@ public class Movie {
         schedules.add(schedule);
     }
 
+    public void printAllScheduleInformation (){
+        for(Schedule schedule : schedules){
+            System.out.printf("Movie: %s, Theater: %s, %s - %s  \n",
+                    schedule.getMovie().getTitle(),
+                    schedule.getTheater().getName(),
+                    formatUtility.toFormattedDate(schedule.getStartTime()),
+                    formatUtility.toFormattedDate(schedule.getEndTime())
+            );
+        }
+    }
+
     public boolean isSchedulesEmpty(){
         return schedules.isEmpty();
     }

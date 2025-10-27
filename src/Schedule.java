@@ -13,6 +13,17 @@ public class Schedule {
         this.endTime = startTime.plusMinutes(movie.getDuration());
     }
 
+    public void printScheduleInformation (){
+
+            System.out.printf("Movie: %s, Theater: %s, %s - %s  \n",
+                    this.movie.getTitle(),
+                    this.theater.getName(),
+                    formatUtility.toFormattedDate(this.startTime),
+                    formatUtility.toFormattedDate(this.endTime)
+            );
+
+    }
+
     public Theater getTheater() {
         return theater;
     }

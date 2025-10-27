@@ -23,7 +23,7 @@ public class Theater {
             if(startTime.isAfter(schedule.startTime) && startTime.isBefore(schedule.getEndTime())){
                 result = false;
                 break;
-            }else if(startTime.isBefore(schedule.startTime) && endTime.isAfter(schedule.getStartTime())){
+            }else if(startTime.isBefore(schedule.startTime) && endTime.isAfter(schedule.getStartTime()) || endTime.isEqual(schedule.getEndTime())){ //Is after issue || endTime.isEqual(schedule.getEndTime())
                 result = false;
                 break;
             }

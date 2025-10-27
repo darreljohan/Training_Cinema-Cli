@@ -8,6 +8,7 @@ public class Cinema {
     HashMap<String, Theater> theaters = new HashMap<>();
 
     public Cinema() {
+
     }
 
     public void appendSchedule(Schedule schedule){
